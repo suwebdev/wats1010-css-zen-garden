@@ -4,7 +4,7 @@ wats1010-css-zen-garden
 This is the source repository for the CSS Zen Garden assignment in WATS1010:
 Introduction to Web Development. This assignment is designed to allow you to
 focus on design and presentation. You will create a new visual style for the
-venerable demo website, CSSZenGarden.com. This website has been remade by many
+venerable demo website, http://CSSZenGarden.com. This website has been remade by many
 web designers and developers over the years, with several hundred examples
 available to look at. You will create a new design for the website, and in
 doing so you will practice an approach to graphic and interface design.
