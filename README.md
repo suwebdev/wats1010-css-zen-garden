@@ -53,5 +53,5 @@ page. You may not alter the HTML at all in the CSS Zen Garden `index.html` file.
   * Content grouping
   * Appealing graphic style
 * Use of advanced selectors to facilitate styles
-* Use of interactive elements such as ``:hover` and ``:focus` pseudoclasses
+* Use of interactive elements such as ``:hover`` and ``:focus`` pseudoclasses
 * Use of `animate`, `transition` or `transform` properties to enhance page content
