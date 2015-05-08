@@ -13,37 +13,39 @@ html {
 	margin: 0;
 	padding: 0;
 	}
-body { 
-	font: 75% georgia, sans-serif;
+body {
+	font: 12px; georgia, sans-serif;
 	line-height: 1.88889;
-	color: #555753; 
-	background: #fff url(blossoms.jpg) no-repeat bottom right; 
-	margin: 0; 
+	color: #555753;
+	background: #fff url(bback.jpg) no-repeat bottom right;
+	margin: 0;
 	padding: 0;
 	}
-p { 
-	margin-top: 0; 
+p {
+	margin-top: 0;
 	text-align: justify;
 	}
-h3 { 
-	font: italic normal 1.4em georgia, sans-serif;
-	letter-spacing: 1px; 
-	margin-bottom: 0; 
+h3 {
+	font: normal 1.8em georgia, sans-serif;
+	text-transform: uppercase;
+	letter-spacing: 1px;
+	margin-bottom: 0;
 	color: #7D775C;
+
 	}
-a:link { 
-	font-weight: bold; 
-	text-decoration: none; 
-	color: #B7A5DF;
+a:link {
+	font-weight: bold;
+	text-decoration: none;
+	color: #0000FF;
 	}
-a:visited { 
-	font-weight: bold; 
-	text-decoration: none; 
-	color: #D4CDDC;
+a:visited {
+	font-weight: bold;
+	text-decoration: none;
+	color: purple;
 	}
-a:hover, a:focus, a:active { 
-	text-decoration: underline; 
-	color: #9685BA;
+a:hover, a:focus, a:active {
+	text-decoration: underline;
+	color: #FF0000;
 	}
 abbr {
 	border-bottom: none;
@@ -51,19 +53,20 @@ abbr {
 
 
 /* specific divs */
-.page-wrapper { 
-	background: url(zen-bg.jpg) no-repeat top left; 
-	padding: 0 175px 0 110px;  
-	margin: 0; 
+.page-wrapper {
+	background:#eee url(zen-bg.jpg) no-repeat top left;
+	padding: 0 175px 0 110px;
+	margin: 0;
 	position: relative;
 	}
 
-.intro { 
+.intro {
 	min-width: 470px;
 	width: 100%;
+
 	}
 
-header h1 { 
+header h1 {
 	background: transparent url(h1.gif) no-repeat top left;
 	margin-top: 10px;
 	display: block;
@@ -71,124 +74,215 @@ header h1 {
 	height: 87px;
 	float: left;
 
-	text-indent: 100%;
+	text-indent: 5%;font-size: 50px;
 	white-space: nowrap;
-	overflow: hidden;
+	overflow: visible;
 	}
-header h2 { 
-	background: transparent url(h2.gif) no-repeat top left; 
-	margin-top: 58px; 
-	margin-bottom: 40px; 
-	width: 200px; 
-	height: 18px; 
-	float: right;
+header h2 {
+	background: transparent url(h2.gif) no-repeat top left;
+	margin-top: 80px;
+	margin-bottom: 40px;
+	width: 200px;
+	height: 18px;
+	float: left;
+	position: absolute;
 
-	text-indent: 100%;
+	text-indent: 5%;
 	white-space: nowrap;
-	overflow: hidden;
+	overflow: visible;
 	}
 header {
-	padding-top: 20px;
-	height: 87px;
+	border-radius: 25px;
+    border: 1px solid #8AC007;
+    padding: 10px;
+
+	width: 100%;
+	background: transparent url(img/farm-background.jpg) no-repeat top left;
+	background-size: cover;
+	background-position: center center;
+	margin-top: 0;
+	display: block;
+	margin-bottom: 20px;
+
+	height: 287px;
+	float: left;
+
+	text-indent: 5%;
+	white-space: nowrap;
+	overflow: visible;
+
+	animation: animatedBackground 40s linear infinite;
 }
 
 .summary {
-	clear: both; 
-	margin: 20px 20px 20px 10px; 
-	width: 160px; 
-	float: left;
+
+    border-bottom: 4px solid #8AC007;
+    padding: 0px;
+    width: 100%;
+    height: 100%;
+
+	clear: both;
+	margin: 20px 20px 20px 10px;
+	width: 75%;
+	float: center;
+	background: light-green;
 	}
 .summary p {
-	font: italic 1.1em/2.2 georgia; 
+
+	font: italic 1.3em/2.2 georgia; bold;
 	text-align: center;
-	}
+}
+
+h3, participation h3:first-child {
+  background: #C0D9AF;
+}
 
 .preamble {
-	clear: right; 
+	font-family: georgia, Areal, Helvetice, Sanserif; 14px;
+	color: #000;
+	float: center;
 	padding: 0px 10px 0 10px;
+	width: 75%;
 	}
-.supporting {	
-	padding-left: 10px; 
+.supporting {
+	font-family: georgia, Areal, Helvetice, Sanserif; 14px;
+	color: #000;
+	padding-left: 10px;
 	margin-bottom: 40px;
+	width: 75%;
+	}
+	div.requirements p:last-child {
+		font-size: 24px; color: #fff;
+		background: transparent url(img/credits.jpg) no-repeat top left;
+		background-position: center center;
+		background-size: cover;
+	    padding: 10px;
+			height: 100px;
+	    width: 100%;
 	}
 
-footer { 
-	text-align: center; 
+	div.requirements p:last-child {
+		font: italic 1.3em/2.2 georgia; bold; color: white;
 	}
-footer a:link, footer a:visited { 
-	margin-right: 20px; 
+
+
+
+
+footer {
+	border-radius: 25px;
+    border: 1px solid #8AC007;
+    padding: 10px;
+
+	background: transparent url(img/farm-background.jpg) no-repeat top left;
+	background-size: cover;
+	background-position: center center;
+	height: 100px;
+	width: 100%;
+	text-align: center;
 	}
+footer a:link, footer a:visited {
+	color: #000; font-size: 20px;
+	margin-right: 20px;
+	}
+
 
 .sidebar {
-	margin-left: 600px; 
-	position: absolute; 
-	top: 0; 
+
+	position: absolute; left;
+	margin-left: 10px;
+	margin-right:200px;
+	top: 0;
 	right: 0;
+	width:15%;
 	}
-.sidebar .wrapper { 
-	font: 10px verdana, sans-serif; 
-	background: transparent url(paper-bg.jpg) top left repeat-y; 
-	padding: 10px; 
-	margin-top: 150px; 
-	width: 130px; 
-	}
-.sidebar h3.select { 
-	background: transparent url(h3.gif) no-repeat top left; 
-	margin: 10px 0 5px 0; 
-	width: 97px; 
-	height: 16px; 
+.sidebar .wrapper {
 
-	text-indent: 100%;
-	white-space: nowrap;
-	overflow: hidden;
+	float: left;
+	font: 10px verdana, sans-serif;
+	padding: 10px;
+	margin-top: 310px;
+	width: 130px;
+	width: 100%;
 	}
-.sidebar h3.archives { 
-	background: transparent url(h5.gif) no-repeat top left; 
-	margin: 25px 0 5px 0; 
-	width:57px; 
-	height: 14px; 
+.sidebar h3.select {
+	background: transparent url(img/bback.jpg) no-repeat top left;
 
-	text-indent: 100%;
-	white-space: nowrap;
-	overflow: hidden;
+	border-radius: 25px;
+    background: #C0D9AF;
+    padding: 10px;
+    width: 200px;
+
+
 	}
-.sidebar h3.resources { 
-	background: transparent url(h6.gif) no-repeat top left; 
-	margin: 25px 0 5px 0; 
-	width:63px; 
-	height: 10px; 
+.sidebar h3.archives {
+	border-radius: 25px;
+		background: #C0D9AF;
+		padding: 2px;
+		width: 200px;
 
-	text-indent: 100%;
+	text-align: middle;
+	font: 14px verdana, sans-serif;
+	padding: 0px;
+	margin-top: 0px;
+	width: 100%;
+
+	text-indent: 15%; font-size: 18px; color: #000; text-transform: uppercase;
+
 	white-space: nowrap;
-	overflow: hidden;
+	overflow: visible;
+	}
+.sidebar h3.resources {
+	border-radius: 25px;
+    background: #C0D9AF;
+    padding: 2px;
+    width: 200px;
+
+	text-align: middle;
+	font: 14px verdana, sans-serif;
+	padding: 0px;
+	margin-top: 0px;
+	width: 100%;;
+
+	text-indent: 15%; font-size: 18px; color: #000; text-transform: uppercase;
+	white-space: nowrap;
+	overflow: visible;
 	}
 
 
 .sidebar ul {
-	margin: 0;
-	padding: 0;
+	border-radius: 25px;
+	    border: 2px solid #8AC007;
+	    padding: 20px;
+	    width: 150px;
+	    height: 100%;
+			  background-position: center center;
+	background-size: cover;
+	margin: 10px;
+
+
 	}
 .sidebar li {
-	line-height: 1.3em; 
-	background: transparent url(cr1.gif) no-repeat top center; 
-	display: block; 
-	padding-top: 5px; 
-	margin-bottom: 5px;
+
 	list-style-type: none;
+	font: 12px verdana, sans-serif;
+	padding: 10px;
+	margin-top: 0px;
+	width: 130px;
 	}
 .sidebar li a:link {
-	color: #988F5E;
+	color: #000;
 	}
 .sidebar li a:visited {
-	color: #B3AE94;
+	color: #0000ff;
 	}
-
+	.sidebar li a:hover {
+		color: #ff0000; text-decoration: none;
+		}
 
 .extra1 {
-	background: transparent url(cr2.gif) top left no-repeat; 
-	position: absolute; 
-	top: 40px; 
-	right: 0; 
-	width: 148px; 
-	height: 110px;
+	font: 10px verdana, sans-serif;
+	padding: 10px;
+	margin-top: 0px;
+	width: 130px;
+
 	}
