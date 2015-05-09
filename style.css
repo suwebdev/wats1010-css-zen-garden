@@ -1,30 +1,22 @@
-/* css Zen Garden default style v1.02 */
-/* css released under Creative Commons License - http://creativecommons.org/licenses/by-nc-sa/1.0/  */
-
-/* This file based on 'Tranquille' by Dave Shea */
-/* You may use this file as a foundation for any new work, but you may find it easier to start from scratch. */
-/* Not all elements are defined in this file, so you'll most likely want to refer to the xhtml as well. */
-
-/* Your images should be linked as if the CSS file sits in the same folder as the images. ie. no paths. */
-
-
-/* basic elements */
-html {
-	margin: 0;
-	padding: 0;
-	}
 body {
-	font: 12px; georgia, sans-serif;
-	line-height: 1.88889;
-	color: #555753;
-	background: #fff url(bback.jpg) no-repeat bottom right;
-	margin: 0;
-	padding: 0;
-	}
-p {
-	margin-top: 0;
-	text-align: justify;
-	}
+  font-family: georgia, san-serif;
+}
+.page-wrapper {
+  width: 100%;
+}
+header {
+  margin: 0;
+  padding-top: 10px;
+  width: 137%;
+  background: transparent url(img/green-background.jpg) no-repeat top left;
+  background-position: center center;
+  background-size: cover; 
+  height: 200px;
+  text-indent: 5%;
+    line-height: 0.1em;
+
+}
+
 h3 {
 	font: normal 1.8em georgia, sans-serif;
 	text-transform: uppercase;
@@ -36,127 +28,126 @@ h3 {
 a:link {
 	font-weight: bold;
 	text-decoration: none;
-	color: #0000FF;
+	color: #000;
 	}
 a:visited {
 	font-weight: bold;
 	text-decoration: none;
 	color: purple;
 	}
-a:hover, a:focus, a:active {
+	a:active {
+	text-decoration: underline;
+	color: #0000ff;
+	}
+a:hover, a:focus {
 	text-decoration: underline;
 	color: #FF0000;
 	}
-abbr {
-	border-bottom: none;
+
+aside {
+background: transparent url(img/angular.png) no-repeat top left;
+background-position: center center;
+  background-size: cover;
+	border-radius: 25px;
+    width: 200px;
+
+  position: absolute; right;
+  width: 25%;
+  height: 900px;
+  display: inline-block;
+  
+  margin: 10px;
+}
+.sidebar {
+float: right;
+
+}
+
+.sidebar li {
+
+	list-style-type: none;
 	}
 
-
-/* specific divs */
-.page-wrapper {
-	background:#eee url(zen-bg.jpg) no-repeat top left;
-	padding: 0 175px 0 110px;
-	margin: 0;
-	position: relative;
-	}
 
 .intro {
-	min-width: 470px;
-	width: 100%;
-
-	}
-
-header h1 {
-	background: transparent url(h1.gif) no-repeat top left;
-	margin-top: 10px;
-	display: block;
-	width: 219px;
-	height: 87px;
-	float: left;
-
-	text-indent: 5%;font-size: 50px;
-	white-space: nowrap;
-	overflow: visible;
-	}
-header h2 {
-	background: transparent url(h2.gif) no-repeat top left;
-	margin-top: 80px;
-	margin-bottom: 40px;
-	width: 200px;
-	height: 18px;
-	float: left;
-	position: absolute;
-
-	text-indent: 5%;
-	white-space: nowrap;
-	overflow: visible;
-	}
-header {
-	border-radius: 25px;
-    border: 1px solid #8AC007;
-    padding: 10px;
-
-	width: 100%;
-	background: transparent url(img/farm-background.jpg) no-repeat top left;
-	background-size: cover;
-	background-position: center center;
-	margin-top: 0;
-	display: block;
-	margin-bottom: 20px;
-
-	height: 287px;
-	float: left;
-
-	text-indent: 5%;
-	white-space: nowrap;
-	overflow: visible;
-
-	animation: animatedBackground 40s linear infinite;
+  float: center;
+  width: 70%;
+  background: #fff;
+  clear: left;
+  
+}
+.intro h1:first-child{
+  color: black; font-size: 50px; 
+}
+.intro h2:last-child{
+  color: #eee; font-style: italic; margin-bottom: 5px; font-size: 30px;
 }
 
 .summary {
-
     border-bottom: 4px solid #8AC007;
-    padding: 0px;
-    width: 100%;
-    height: 100%;
 
-	clear: both;
-	margin: 20px 20px 20px 10px;
-	width: 75%;
-	float: center;
-	background: light-green;
-	}
+  margin-top: 10px;
+ float: left;
+  width: 100%;
+  background: #eee;
+  clear: left;
+  
+}
 .summary p {
 
-	font: italic 1.3em/2.2 georgia; bold;
+	font: italic 1.3em/1.2 georgia; bold;
 	text-align: center;
 }
-
-h3, participation h3:first-child {
-  background: #C0D9AF;
+.preamble {
+  float: left;
+  width: 100%;
+  background: #fff;
+  clear: left;
+  
+}
+.supporting {
+  float: left;
+  width: 70%;
+  background: #fff;
 }
 
-.preamble {
-	font-family: georgia, Areal, Helvetice, Sanserif; 14px;
-	color: #000;
-	float: center;
-	padding: 0px 10px 0 10px;
-	width: 75%;
-	}
-.supporting {
-	font-family: georgia, Areal, Helvetice, Sanserif; 14px;
-	color: #000;
-	padding-left: 10px;
-	margin-bottom: 40px;
-	width: 75%;
-	}
-	div.requirements p:last-child {
+.explanation {
+  float: left;
+  width: 100%;
+  background: #fff;
+  clear: left;
+  
+}
+
+.participation {
+  float: left;
+  width: 100%;
+  background: #fff;
+  clear: left;
+  
+}
+
+.benefits {
+  float: left;
+  width: 100%;
+  background: #fff;
+  clear: left;
+  
+}
+.requirements {
+  float: left;
+  width: 100%;
+  background: #ddd;
+  clear: left;
+  
+}
+
+div.requirements p:last-child {
 		font-size: 24px; color: #fff;
-		background: transparent url(img/credits.jpg) no-repeat top left;
+		background: transparent url(img/angular.png) no-repeat top left;
 		background-position: center center;
 		background-size: cover;
-	    padding: 10px;
+	    
 			height: 100px;
 	    width: 100%;
 	}
@@ -167,122 +158,17 @@ h3, participation h3:first-child {
 
 
 
-
 footer {
-	border-radius: 25px;
-    border: 1px solid #8AC007;
-    padding: 10px;
-
-	background: transparent url(img/farm-background.jpg) no-repeat top left;
+background: transparent url(img/farm-background.jpg) no-repeat top left;
 	background-size: cover;
 	background-position: center center;
-	height: 100px;
-	width: 100%;
-	text-align: center;
-	}
+clear: both;
+width: 100%;
+height: 100px;
+text-align: center;
+
+}
 footer a:link, footer a:visited {
 	color: #000; font-size: 20px;
-	margin-right: 20px;
-	}
-
-
-.sidebar {
-
-	position: absolute; left;
-	margin-left: 10px;
-	margin-right:200px;
-	top: 0;
-	right: 0;
-	width:15%;
-	}
-.sidebar .wrapper {
-
-	float: left;
-	font: 10px verdana, sans-serif;
-	padding: 10px;
-	margin-top: 310px;
-	width: 130px;
-	width: 100%;
-	}
-.sidebar h3.select {
-	background: transparent url(img/bback.jpg) no-repeat top left;
-
-	border-radius: 25px;
-    background: #C0D9AF;
-    padding: 10px;
-    width: 200px;
-
-
-	}
-.sidebar h3.archives {
-	border-radius: 25px;
-		background: #C0D9AF;
-		padding: 2px;
-		width: 200px;
-
-	text-align: middle;
-	font: 14px verdana, sans-serif;
-	padding: 0px;
-	margin-top: 0px;
-	width: 100%;
-
-	text-indent: 15%; font-size: 18px; color: #000; text-transform: uppercase;
-
-	white-space: nowrap;
-	overflow: visible;
-	}
-.sidebar h3.resources {
-	border-radius: 25px;
-    background: #C0D9AF;
-    padding: 2px;
-    width: 200px;
-
-	text-align: middle;
-	font: 14px verdana, sans-serif;
-	padding: 0px;
-	margin-top: 0px;
-	width: 100%;;
-
-	text-indent: 15%; font-size: 18px; color: #000; text-transform: uppercase;
-	white-space: nowrap;
-	overflow: visible;
-	}
-
-
-.sidebar ul {
-	border-radius: 25px;
-	    border: 2px solid #8AC007;
-	    padding: 20px;
-	    width: 150px;
-	    height: 100%;
-			  background-position: center center;
-	background-size: cover;
-	margin: 10px;
-
-
-	}
-.sidebar li {
-
-	list-style-type: none;
-	font: 12px verdana, sans-serif;
-	padding: 10px;
-	margin-top: 0px;
-	width: 130px;
-	}
-.sidebar li a:link {
-	color: #000;
-	}
-.sidebar li a:visited {
-	color: #0000ff;
-	}
-	.sidebar li a:hover {
-		color: #ff0000; text-decoration: none;
-		}
-
-.extra1 {
-	font: 10px verdana, sans-serif;
-	padding: 10px;
-	margin-top: 0px;
-	width: 130px;
-
+	padding: 20px;
 	}
