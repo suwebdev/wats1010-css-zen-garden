@@ -4,11 +4,40 @@ body {
 .page-wrapper {
   width: 100%;
 }
+ .intro div {
+    background-color: #eeeeee;
+    transition-timing-function: cubic-bezier(1,0,1,0);
+    transition-duration: 0.5s;
+  }
+  .intro:hover div { background-color: #fffc53; }
+
+.preamble img { transition: 1s ease-in-out; }
+  img.farm-background, .preable:hover img.bg1 { opacity: 1.0; }
+  .preamble:hover img.farm-background, img.bg1 { opacity: 0; }
+  
+  aside {
+    border-style: solid;
+    border-width: 1px;
+    display: block;
+    width: 100px;
+    height: 900px;
+    background-color: #0000FF;
+    -webkit-transition:width 10s, height 10s, background-color 10s, -webkit-transform 10s;
+    transition:width 10s, height 10s, background-color 10s, transform 10s;
+}
+aside:hover {
+    background-color: #FFCCCC;
+    width:200px;
+    height:900px;
+    -webkit-transform:rotate(0deg);
+    transform:rotate(0deg);
+}
+
 header {
   margin: 0;
   padding-top: 10px;
   width: 137%;
-  background: transparent url(img/green-background.jpg) no-repeat top left;
+  background: transparent url(img/bg1.jpg) no-repeat top left;
   background-position: center center;
   background-size: cover; 
   height: 200px;
@@ -40,12 +69,16 @@ a:visited {
 	color: #0000ff;
 	}
 a:hover, a:focus {
-	text-decoration: underline;
-	color: #FF0000;
+	background-color: #fc3;
+    -webkit-transform: rotate(360deg) scale(2);
+    -moz-transform: rotate(360deg) scale(2);
+    -o-transform: rotate(360deg) scale(2);
+    -ms-transform: rotate(360deg) scale(2);
+    transform: rotate(360deg) scale(2);
 	}
 
 aside {
-background: transparent url(img/angular.png) no-repeat top left;
+background: transparent url(img/lightg.jpg) no-repeat top left;
 background-position: center center;
   background-size: cover;
 	border-radius: 25px;
@@ -67,8 +100,15 @@ float: right;
 
 	list-style-type: none;
 	}
-
-
+.sidebar li a:hover{
+background-color: #fc3;
+    -webkit-transform: rotate(360deg) scale(2);
+    -moz-transform: rotate(360deg) scale(2);
+    -o-transform: rotate(360deg) scale(2);
+    -ms-transform: rotate(360deg) scale(2);
+    transform: rotate(360deg) scale(2);
+	
+	}
 .intro {
   float: center;
   width: 70%;
@@ -82,17 +122,16 @@ float: right;
 .intro h2:last-child{
   color: #eee; font-style: italic; margin-bottom: 5px; font-size: 30px;
 }
-
-.summary {
-    border-bottom: 4px solid #8AC007;
+[class^="summary"] {
+    background: #e8e8e8;
+	border-bottom: 4px solid #8AC007;
 
   margin-top: 10px;
  float: left;
   width: 100%;
-  background: #eee;
   clear: left;
-  
-}
+} 
+
 .summary p {
 
 	font: italic 1.3em/1.2 georgia; bold;
@@ -104,6 +143,11 @@ float: right;
   background: #fff;
   clear: left;
   
+}
+[class*="pream"] {
+		background: transparent url(img/bubble.jpg) no-repeat;
+		background-position: center center;
+		background-size: cover;
 }
 .supporting {
   float: left;
@@ -137,7 +181,7 @@ float: right;
 .requirements {
   float: left;
   width: 100%;
-  background: #ddd;
+  background: #fff;
   clear: left;
   
 }
@@ -159,7 +203,7 @@ div.requirements p:last-child {
 
 
 footer {
-background: transparent url(img/farm-background.jpg) no-repeat top left;
+background: transparent url(img/bg1.jpg) no-repeat top left;
 	background-size: cover;
 	background-position: center center;
 clear: both;
